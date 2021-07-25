@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
   return res.send('Hello World xxxxx');
 });
 
-app.use(function (error, req, res, next) {
+app.all('*', function (req, res, next) {
   console.log('reciving request', req.path);
   return res.send('done');
 });
