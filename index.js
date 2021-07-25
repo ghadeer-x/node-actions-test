@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 // Respond with "hello world" for requests that hit our root "/"
 app.get('/', function (req, res) {
-  console.log('test');
+  console.log('test log');
   return res.send('Hello World xxxxx');
 });
 // listen to port 7000 by default
